@@ -1,4 +1,4 @@
-/* btns | MIT | #FD0000 */
+/* #FD0000 | btns | MIT */
 .btn {
   display: inline-block;
   text-align: center;
@@ -8,37 +8,37 @@
   cursor: pointer;
 }
 .btn--base {
-  background: red;
-  color: gray;
-  border-color: #990000;
+  background: #fd0000;
+  color: #7f7f7f;
+  border-color: #970000;
 }
 .btn--dark-one {
-  background: #cc0000;
+  background: #ca0000;
   color: white;
-  border-color: #660000;
+  border-color: #640000;
 }
 .btn--dark-two {
-  background: #990000;
+  background: #970000;
   color: white;
-  border-color: #330000;
+  border-color: #310000;
 }
 .btn--dark-three {
-  background: #660000;
+  background: #640000;
   color: white;
   border-color: black;
 }
 .btn--light-one {
-  background: #ff3333;
+  background: #ff3131;
   color: black;
-  border-color: #cc0000;
+  border-color: #ca0000;
 }
 .btn--light-two {
-  background: #ff6666;
+  background: #ff6464;
   color: black;
-  border-color: red;
+  border-color: #fd0000;
 }
 .btn--light-three {
-  background: #ff9999;
+  background: #ff9797;
   color: black;
-  border-color: #ff3333;
+  border-color: #ff3131;
 }
