@@ -1,11 +1,11 @@
-/* #FD0000 | btns | MIT */
+/*! #FD0000 | btns | MIT */
 //options
 $btn-padding: 6px 12px;
 $btn-border-radius: 4px;
 
 $btn-base-bg: #FD0000;
 $btn-base-color: grayscale($btn-base-bg);
-$btn-base-border: darken($btn-base-bg, 20%);
+$btn-base-border: darken($btn-base-bg, 15%);
 
 
 .btn {
@@ -22,32 +22,32 @@ $btn-base-border: darken($btn-base-bg, 20%);
 	}
 	&--dark-one {
 		background: darken($btn-base-bg, 10%);
-		color: lighten($btn-base-color, 90%);
+		color: lighten($btn-base-color, 60%);
 		border-color: darken($btn-base-border, 10%);
 	}
 	&--dark-two {
 		background: darken($btn-base-bg, 20%);
-		color: lighten($btn-base-color, 80%);
+		color: lighten($btn-base-color, 40%);
 		border-color: darken($btn-base-border, 20%);
 	}
 	&--dark-three {
 		background: darken($btn-base-bg, 30%);
-		color: lighten($btn-base-color, 60%);
+		color: lighten($btn-base-color, 20%);
 		border-color: darken($btn-base-border, 30%);
 	}
 	&--light-one {
 		background: lighten($btn-base-bg, 10%);
-		color: darken($btn-base-color, 90%);
+		color: darken($btn-base-color, 60%);
 		border-color: lighten($btn-base-border, 10%);
 	}
 	&--light-two {
 		background: lighten($btn-base-bg, 20%);
-		color: darken($btn-base-color, 80%);
+		color: darken($btn-base-color, 40%);
 		border-color: lighten($btn-base-border, 20%);
 	}
 	&--light-three {
 		background: lighten($btn-base-bg, 30%);
-		color: darken($btn-base-color, 60%);
+		color: darken($btn-base-color, 20%);
 		border-color: lighten($btn-base-border, 30%);
 	}
 }
