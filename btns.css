@@ -1,0 +1,44 @@
+/* btns | MIT | #FD0000 */
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn--base {
+  background: red;
+  color: gray;
+  border-color: #990000;
+}
+.btn--dark-one {
+  background: #cc0000;
+  color: white;
+  border-color: #660000;
+}
+.btn--dark-two {
+  background: #990000;
+  color: white;
+  border-color: #330000;
+}
+.btn--dark-three {
+  background: #660000;
+  color: white;
+  border-color: black;
+}
+.btn--light-one {
+  background: #ff3333;
+  color: black;
+  border-color: #cc0000;
+}
+.btn--light-two {
+  background: #ff6666;
+  color: black;
+  border-color: red;
+}
+.btn--light-three {
+  background: #ff9999;
+  color: black;
+  border-color: #ff3333;
+}
