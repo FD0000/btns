@@ -2,43 +2,72 @@
 .btn {
   display: inline-block;
   text-align: center;
+  font-size: 18px;
   padding: 6px 12px;
   border-radius: 4px;
   border: 1px solid transparent;
   cursor: pointer;
+  color: #fff;
 }
 .btn--base {
-  background: #fd0000;
-  color: #7f7f7f;
-  border-color: #b10000;
+  background: #39CCCC;
+  color: #838383;
+  border-color: #269393;
 }
 .btn--dark-one {
-  background: #ca0000;
+  background: #2ba7a7;
   color: white;
-  border-color: #7e0000;
+  border-color: #1b6a6a;
 }
 .btn--dark-two {
-  background: #970000;
-  color: #e5e5e5;
-  border-color: #4b0000;
+  background: #217e7e;
+  color: #e9e9e9;
+  border-color: #114242;
 }
 .btn--dark-three {
-  background: #640000;
-  color: #b2b2b2;
-  border-color: #180000;
+  background: #165656;
+  color: #b6b6b6;
+  border-color: #061919;
 }
 .btn--light-one {
-  background: #ff3131;
+  background: #62d6d6;
   color: black;
-  border-color: #e40000;
+  border-color: #30bbbb;
 }
 .btn--light-two {
-  background: #ff6464;
-  color: #191919;
-  border-color: #ff1818;
+  background: #8ae1e1;
+  color: #1d1d1d;
+  border-color: #4dd1d1;
 }
 .btn--light-three {
-  background: #ff9797;
-  color: #4c4c4c;
-  border-color: #ff4b4b;
+  background: #b3ebeb;
+  color: #505050;
+  border-color: #76dcdc;
 }
+.btn--complement {
+  background: #cc3939;
+  color: #838383;
+  border-color: #7e2121;
+}
+.btn--mix {
+  background: #5ea7a7;
+  color: #838383;
+  border-color: #386767;
+}
+.btn--hue-one {
+  background: #399bcc;
+}
+.btn--hue-two {
+  background: #396acc;
+}
+.btn--hue-three {
+  background: #3939cc;
+}
+.btn--hue-four {
+  background: #6a39cc;
+}
+.btn--hue-five {
+  background: #9b39cc;
+}
+
+/*# sourceMappingURL=btns.css.map */

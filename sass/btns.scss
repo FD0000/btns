@@ -1,20 +1,28 @@
 /*! #FD0000 | btns | MIT */
 //options
+$btn-base-bg: #39CCCC;
+
 $btn-padding: 6px 12px;
 $btn-border-radius: 4px;
+$btn-font-size: 18px;
 
-$btn-base-bg: #FD0000;
+//variables
 $btn-base-color: grayscale($btn-base-bg);
 $btn-base-border: darken($btn-base-bg, 15%);
+
+$complement-bg: complement($btn-base-bg);
+$mix-bg: mix($btn-base-bg, $btn-base-color);
 
 
 .btn {
 	display: inline-block;
 	text-align: center;
+	font-size: $btn-font-size;
 	padding: $btn-padding;
 	border-radius: $btn-border-radius;
 	border: 1px solid transparent;
 	cursor: pointer;
+	color: #fff;
 	&--base {
 		background: $btn-base-bg;
 		color: $btn-base-color;
@@ -49,5 +57,30 @@ $btn-base-border: darken($btn-base-bg, 15%);
 		background: lighten($btn-base-bg, 30%);
 		color: darken($btn-base-color, 20%);
 		border-color: lighten($btn-base-border, 30%);
+	}
+	&--complement {
+		background: $complement-bg;
+		color: $btn-base-color;
+		border-color: darken($complement-bg, 20%);
+	}
+	&--mix {
+		background: $mix-bg;
+		color: $btn-base-color;
+		border-color: darken($mix-bg, 20%);
+	}
+	&--hue-one {
+		background: adjust-hue($btn-base-bg, 20%);
+	}
+	&--hue-two {
+		background: adjust-hue($btn-base-bg, 40%);
+	}
+	&--hue-three {
+		background: adjust-hue($btn-base-bg, 60%);
+	}
+	&--hue-four {
+		background: adjust-hue($btn-base-bg, 80%);
+	}
+	&--hue-five {
+		background: adjust-hue($btn-base-bg, 100%);
 	}
 }
