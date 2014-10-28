@@ -10,7 +10,7 @@ Use one background color to generate a large set of pre-configured, Sass based C
 
 - Clone this repository into your CSS directory (note the `.` at the end):
 
-	`git clone https://github.com/#FD0000/btns.git .`
+	`git clone https://github.com/FD0000/btns.git .`
 
 - Start watching `btns.scss`:
 
