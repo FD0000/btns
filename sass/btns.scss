@@ -2,14 +2,13 @@
 //options
 $btn-base-bg: #FD0000;
 $btn-base-color: #f5f5f5;
+$btn-base-border: darken($btn-base-bg, 15%);
 
 $btn-padding: 6px 12px;
 $btn-border-radius: 4px;
 $btn-font-size: 16px;
 
-//variables
-$btn-base-border: darken($btn-base-bg, 15%);
-
+//methods
 $complement-bg: complement($btn-base-bg);
 $mix-bg: mix($btn-base-bg, $btn-base-color);
 $invert-bg: invert($btn-base-bg);
@@ -58,47 +57,67 @@ $invert-bg: invert($btn-base-bg);
 		color: darken($btn-base-color, 90%);
 		border-color: lighten($btn-base-border, 30%);
 	}
-	&--grayscale {
-		background: grayscale($btn-base-bg);
+	&--mix {
+		background: $mix-bg;
+		color: $btn-base-color;
+		border-color: darken($mix-bg, 15%);
+	}
+	&--hue-one {
+		$hue-one: adjust-hue($btn-base-bg, 15%);
+		background: $hue-one;
+		border-color: darken($hue-one, 15%);
+	}
+	&--hue-two {
+		$hue-two: adjust-hue($btn-base-bg, 35%);
+		background: $hue-two;
+		border-color: darken($hue-two, 15%);
+	}
+	&--hue-three {
+		$hue-three: adjust-hue($btn-base-bg, 55%);
+		background: $hue-three;
+		border-color: darken($hue-three, 15%);
+	}
+	&--hue-four {
+		$hue-four: adjust-hue($btn-base-bg, 75%);
+		background: $hue-four;
+		border-color: darken($hue-four, 15%);
+	}
+	&--hue-five {
+		$hue-five: adjust-hue($btn-base-bg, 95%);
+		background: $hue-five;
+		border-color: darken($hue-five, 15%);
 	}
 	&--complement {
 		background: $complement-bg;
 		color: $btn-base-color;
-		border-color: darken($complement-bg, 20%);
-	}
-	&--mix {
-		background: $mix-bg;
-		color: $btn-base-color;
-		border-color: darken($mix-bg, 20%);
-	}
-	&--hue-one {
-		background: adjust-hue($btn-base-bg, 15%);
-	}
-	&--hue-two {
-		background: adjust-hue($btn-base-bg, 35%);
-	}
-	&--hue-three {
-		background: adjust-hue($btn-base-bg, 55%);
-	}
-	&--hue-four {
-		background: adjust-hue($btn-base-bg, 75%);
-	}
-	&--hue-five {
-		background: adjust-hue($btn-base-bg, 95%);
+		border-color: darken($complement-bg, 15%);
 	}
 	&--hue-i-one {
-		background: adjust-hue($invert-bg, 15%);
+		$hue-i-one: adjust-hue($invert-bg, 15%);
+		background: $hue-i-one;
+		border-color: darken($hue-i-one, 15%);
 	}
 	&--hue-i-two {
-		background: adjust-hue($invert-bg, 35%);
+		$hue-i-two: adjust-hue($invert-bg, 35%);
+		background: $hue-i-two;
+		border-color: darken($hue-i-two, 15%);
 	}
 	&--hue-i-three {
-		background: adjust-hue($invert-bg, 55%);
+		$hue-i-three: adjust-hue($invert-bg, 55%);
+		background: $hue-i-three;
+		border-color: darken($hue-i-three, 15%);
 	}
 	&--hue-i-four {
-		background: adjust-hue($invert-bg, 75%);
+		$hue-i-four: adjust-hue($invert-bg, 75%);
+		background: $hue-i-four;
+		border-color: darken($hue-i-four, 15%);
 	}
 	&--hue-i-five {
-		background: adjust-hue($invert-bg, 95%);
+		$hue-i-five: adjust-hue($invert-bg, 95%);
+		background: $hue-i-five;
+		border-color: darken($hue-i-five, 15%);
+	}
+	&--grayscale {
+		background: grayscale($btn-base-bg);
 	}
 }
