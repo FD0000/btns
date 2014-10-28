@@ -1,17 +1,18 @@
 /*! #FD0000 | btns | MIT */
 //options
-$btn-base-bg: #39CCCC;
+$btn-base-bg: #FD0000;
+$btn-base-color: #f5f5f5;
 
 $btn-padding: 6px 12px;
 $btn-border-radius: 4px;
-$btn-font-size: 18px;
+$btn-font-size: 16px;
 
 //variables
-$btn-base-color: grayscale($btn-base-bg);
 $btn-base-border: darken($btn-base-bg, 15%);
 
 $complement-bg: complement($btn-base-bg);
 $mix-bg: mix($btn-base-bg, $btn-base-color);
+$invert-bg: invert($btn-base-bg);
 
 
 .btn {
@@ -22,7 +23,7 @@ $mix-bg: mix($btn-base-bg, $btn-base-color);
 	border-radius: $btn-border-radius;
 	border: 1px solid transparent;
 	cursor: pointer;
-	color: #fff;
+	color: $btn-base-color;
 	&--base {
 		background: $btn-base-bg;
 		color: $btn-base-color;
@@ -45,18 +46,20 @@ $mix-bg: mix($btn-base-bg, $btn-base-color);
 	}
 	&--light-one {
 		background: lighten($btn-base-bg, 10%);
-		color: darken($btn-base-color, 60%);
 		border-color: lighten($btn-base-border, 10%);
 	}
 	&--light-two {
 		background: lighten($btn-base-bg, 20%);
-		color: darken($btn-base-color, 40%);
+		color: darken($btn-base-color, 80%);
 		border-color: lighten($btn-base-border, 20%);
 	}
 	&--light-three {
 		background: lighten($btn-base-bg, 30%);
-		color: darken($btn-base-color, 20%);
+		color: darken($btn-base-color, 90%);
 		border-color: lighten($btn-base-border, 30%);
+	}
+	&--grayscale {
+		background: grayscale($btn-base-bg);
 	}
 	&--complement {
 		background: $complement-bg;
@@ -69,18 +72,33 @@ $mix-bg: mix($btn-base-bg, $btn-base-color);
 		border-color: darken($mix-bg, 20%);
 	}
 	&--hue-one {
-		background: adjust-hue($btn-base-bg, 20%);
+		background: adjust-hue($btn-base-bg, 15%);
 	}
 	&--hue-two {
-		background: adjust-hue($btn-base-bg, 40%);
+		background: adjust-hue($btn-base-bg, 35%);
 	}
 	&--hue-three {
-		background: adjust-hue($btn-base-bg, 60%);
+		background: adjust-hue($btn-base-bg, 55%);
 	}
 	&--hue-four {
-		background: adjust-hue($btn-base-bg, 80%);
+		background: adjust-hue($btn-base-bg, 75%);
 	}
 	&--hue-five {
-		background: adjust-hue($btn-base-bg, 100%);
+		background: adjust-hue($btn-base-bg, 95%);
+	}
+	&--hue-i-one {
+		background: adjust-hue($invert-bg, 15%);
+	}
+	&--hue-i-two {
+		background: adjust-hue($invert-bg, 35%);
+	}
+	&--hue-i-three {
+		background: adjust-hue($invert-bg, 55%);
+	}
+	&--hue-i-four {
+		background: adjust-hue($invert-bg, 75%);
+	}
+	&--hue-i-five {
+		background: adjust-hue($invert-bg, 95%);
 	}
 }
