@@ -119,5 +119,6 @@ $invert-bg: invert($btn-base-bg);
 	}
 	&--grayscale {
 		background: grayscale($btn-base-bg);
+		border-color: grayscale($btn-base-border);
 	}
 }
