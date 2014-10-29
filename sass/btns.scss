@@ -7,11 +7,13 @@ $btn-base-border: darken($btn-base-bg, 15%);
 $btn-padding: 6px 12px;
 $btn-border-radius: 4px;
 $btn-font-size: 16px;
+$btn-border-size: 1px;
 
 //methods
 $complement-bg: complement($btn-base-bg);
 $mix-bg: mix($btn-base-bg, $btn-base-color);
 $invert-bg: invert($btn-base-bg);
+$ghost-bg: transparent;
 
 
 .btn {
@@ -20,7 +22,7 @@ $invert-bg: invert($btn-base-bg);
 	font-size: $btn-font-size;
 	padding: $btn-padding;
 	border-radius: $btn-border-radius;
-	border: 1px solid transparent;
+	border: #{$btn-border-size} solid transparent;
 	cursor: pointer;
 	color: $btn-base-color;
 	&:hover {
@@ -123,5 +125,30 @@ $invert-bg: invert($btn-base-bg);
 	&--grayscale {
 		background: grayscale($btn-base-bg);
 		border-color: grayscale($btn-base-border);
+	}
+	&--black {
+		background: darken($btn-base-bg, 100%);
+		color: lighten($btn-base-color, 100%);
+		border-color: darken($btn-base-border, 100%);
+	}
+	&--white {
+		background: lighten($btn-base-bg, 100%);
+		color: darken($btn-base-color, 100%);
+		border-color: darken($btn-base-border, 100%);
+	}
+	&--ghost-white {
+		background: $ghost-bg;
+		color: lighten($btn-base-color, 100%);
+		border-color: lighten($btn-base-border, 100%);
+	}
+	&--ghost-base {
+		background: $ghost-bg;
+		color: $btn-base-bg;
+		border-color: $btn-base-bg;
+	}
+	&--ghost-black {
+		background: $ghost-bg;
+		color: darken($btn-base-color, 100%);
+		border-color: darken($btn-base-border, 100%);
 	}
 }

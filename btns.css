@@ -100,5 +100,30 @@
   background: #7f7f7f;
   border-color: #585858;
 }
+.btn--black {
+  background: black;
+  color: white;
+  border-color: black;
+}
+.btn--white {
+  background: white;
+  color: black;
+  border-color: black;
+}
+.btn--ghost-white {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+.btn--ghost-base {
+  background: transparent;
+  color: #FD0000;
+  border-color: #FD0000;
+}
+.btn--ghost-black {
+  background: transparent;
+  color: black;
+  border-color: black;
+}
 
 /*# sourceMappingURL=btns.css.map */
