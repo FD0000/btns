@@ -9,6 +9,12 @@
   cursor: pointer;
   color: #f5f5f5;
 }
+.btn--sm {
+  padding: 3px 6px;
+}
+.btn--lg {
+  padding: 12px 24px;
+}
 .btn:hover {
   opacity: 0.75;
 }

@@ -4,17 +4,23 @@ $btn-base-bg: #FD0000;
 $btn-base-color: #f5f5f5;
 $btn-base-border: darken($btn-base-bg, 15%);
 
-$btn-padding: 6px 12px;
-$btn-border-radius: 4px;
+$btn-top-padding: 6px;
+$btn-left-padding: 12px;
+
 $btn-font-size: 16px;
 $btn-border-size: 1px;
+$btn-border-radius: 4px;
 
-//methods
+
+//logic
+$btn-padding: $btn-top-padding $btn-left-padding;
+$btn-sm: $btn-top-padding / 2 $btn-left-padding / 2;
+$btn-lg: $btn-top-padding * 2 $btn-left-padding * 2;
+
 $complement-bg: complement($btn-base-bg);
 $mix-bg: mix($btn-base-bg, $btn-base-color);
 $invert-bg: invert($btn-base-bg);
 $ghost-bg: transparent;
-
 
 .btn {
 	display: inline-block;
@@ -25,6 +31,12 @@ $ghost-bg: transparent;
 	border: #{$btn-border-size} solid transparent;
 	cursor: pointer;
 	color: $btn-base-color;
+	&--sm {
+		padding: $btn-sm;
+	}
+	&--lg {
+		padding: $btn-lg;
+	}
 	&:hover {
 		opacity: 0.75;
 	}
