@@ -7,11 +7,14 @@
   border-radius: 4px;
   border: 1px solid transparent;
   cursor: pointer;
-  color: whitesmoke;
+  color: #f5f5f5;
+}
+.btn:hover {
+  opacity: 0.75;
 }
 .btn--base {
-  background: #fd0000;
-  color: whitesmoke;
+  background: #FD0000;
+  color: #f5f5f5;
   border-color: #b10000;
 }
 .btn--dark-one {
@@ -45,7 +48,7 @@
 }
 .btn--mix {
   background: #f97a7a;
-  color: whitesmoke;
+  color: #f5f5f5;
   border-color: #f63131;
 }
 .btn--hue-one {
@@ -70,7 +73,7 @@
 }
 .btn--complement {
   background: #00fdfd;
-  color: whitesmoke;
+  color: #f5f5f5;
   border-color: #00b0b1;
 }
 .btn--hue-i-one {
@@ -97,3 +100,5 @@
   background: #7f7f7f;
   border-color: #585858;
 }
+
+/*# sourceMappingURL=btns.css.map */

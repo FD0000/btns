@@ -23,6 +23,9 @@ $invert-bg: invert($btn-base-bg);
 	border: 1px solid transparent;
 	cursor: pointer;
 	color: $btn-base-color;
+	&:hover {
+		opacity: 0.75;
+	}
 	&--base {
 		background: $btn-base-bg;
 		color: $btn-base-color;
