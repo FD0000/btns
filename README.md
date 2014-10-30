@@ -4,7 +4,7 @@ v1.0.0
 
 Use one background color to generate a large set of pre-configured, Sass based CSS buttons.
 
-##Configure
+##Set-up
 
 - Go to where the CSS sits within your project folder:
 
@@ -30,7 +30,6 @@ The basic layout:
 
 ```html
 <button class="btn">Text</button>
-
 ```
 To include the colors:
 
