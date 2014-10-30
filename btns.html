@@ -5,14 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="btns.css">
 	<style type="text/css">
 	html{background:#f5f5f5;}
-	.content{width:960px;margin:0 auto;text-align:center;}
-	h1{font-family:verdana;font-size:90px;border-bottom:1px dashed #ccc;line-height:2.8;}
+	.content{width:960px;margin:0 auto;text-align:center;font-family:verdana;}
+	h1{font-size:90px;border-bottom:1px dashed #ccc;line-height:2.8;}
 	a{color:#111;text-decoration:none;}
 	a:hover{opacity:.9;}
 	button{margin-bottom:10px;}
-	h2{font-family:verdana;font-size:18px;padding-top:100px;margin-top:60px;border-top:1px dashed #ccc;}
-	.fd{background:#FD0000;padding:4px 8px;}
-	.fd a{color:#fff;}
+	input[type="text"]{width:2em;}
+	.fd{font-size:18px;font-weight:bold;padding-top:100px;margin-top:60px;border-top:1px dashed #ccc;}
+	.fd a{color:#fff;background:#FD0000;padding:4px 8px;}
 	</style>
 </head>
 <body>
@@ -38,7 +38,7 @@
 		<button class="btn btn--hue-i-two">hue-i-two</button>
 		<button class="btn btn--hue-i-three">hue-i-three</button>
 		<button class="btn btn--hue-i-four">hue-i-four</button>
-		<button class="btn btn--hue-i-five">hue-i-five</button>
+		<button class="btn btn--hue-i-five">hue-i-five</button><br>
 		<button class="btn btn--grayscale">grayscale</button>
 		<button class="btn btn--black">black</button>
 		<button class="btn btn--white">white</button>
@@ -47,10 +47,14 @@
 		<button class="btn btn--ghost-black">ghost-black</button><br>
 		<button class="btn btn--sm btn--base">sm</button>
 		<button class="btn btn--complement">base</button>
-		<button class="btn btn--lg btn--hue-i-five">lg</button>
+		<button class="btn btn--lg btn--hue-i-five">lg</button><br>
+		<a class="btn btn--light-one" href="#">a</a>
+		<input class="btn btn--base" type="submit" value="submit">
+		<input class="btn btn--dark-one" type="text" value="text">
+
 
 		
-		<h2><span class="fd"><a href="https://github.com/FD0000" target="_blank">#FD0000</a></span></h2>
+		<div class="fd"><a href="https://github.com/FD0000" target="_blank">#FD0000</a></div>
 	</div>
 </body>
 </html>
